@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>山东华宝莱生物工程有限公司 · 产品手册</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230C3B5C'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3EH%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --navy:#0C3B5C; --navy2:#0F5280; --teal:#1FA97A; --teal2:#16C78F;
+    --gold:#C8A24A; --light:#EAF3FA; --light2:#F4F9FC; --ink:#17262F;
+    --muted:#5B6C77; --line:#DDE8F0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  .wrap{max-width:560px;margin:0 auto;padding:0 18px}
+
+  /* ---------- Top nav ---------- */
+  .topnav{position:sticky;top:0;z-index:50;background:rgba(12,59,92,.96);backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(12,59,92,.25)}
+  .topnav .wrap{display:flex;align-items:center;gap:12px;height:54px}
+  .brand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;min-width:0}
+  .brand .logo{width:34px;height:34px;flex:none;border-radius:9px;background:linear-gradient(135deg,var(--teal),var(--teal2));display:grid;place-items:center;padding:7px;box-sizing:border-box}
+  .brand .logo img{width:100%;height:100%;object-fit:contain;display:block}
+  .brand b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .navtabs{display:flex;gap:2px;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+  .navtabs::-webkit-scrollbar{display:none}
+  .navtabs a{color:#cfe3f1;text-decoration:none;font-size:13px;padding:6px 9px;white-space:nowrap;border-radius:8px;flex:none}
+  .navtabs a.on{color:#fff;background:rgba(255,255,255,.14)}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;background:linear-gradient(160deg,#0A2F4B 0%,#0E4D75 55%,#0B6E7A 100%);color:#fff;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;opacity:.5;pointer-events:none}
+  .hero .wrap{position:relative;padding-top:44px;padding-bottom:66px}
+  .hero .brandline{display:inline-flex;align-items:center;gap:7px;font-size:12px;letter-spacing:2px;color:#bcdcea;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 13px;margin-bottom:20px}
+  .hero .brandline i{width:7px;height:7px;border-radius:50%;background:var(--teal2);display:inline-block}
+  .hero h1{font-size:26px;font-weight:800;letter-spacing:1px;line-height:1.35}
+  .hero h1 span{color:var(--teal2)}
+  .hero .en{font-size:11px;letter-spacing:3px;color:#9cc5de;margin-top:8px;text-transform:uppercase}
+  .hero .slogan{margin-top:22px;font-size:16px;font-weight:600;color:#fff}
+  .hero .slogan small{display:block;font-weight:400;font-size:13px;color:#cfe4f2;margin-top:4px}
+  .hero .stats{display:flex;gap:0;margin-top:26px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:16px 6px}
+  .hero .stats>div{flex:1;text-align:center;padding:0 4px}
+  .hero .stats b{display:block;font-size:19px;color:var(--teal2)}
+  .hero .stats span{font-size:11px;color:#bcdcea}
+  .hero .contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+  .hero .contact a{color:#fff;text-decoration:none;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:12px 14px;font-size:13px;display:flex;align-items:center;gap:9px}
+  .hero .contact .ic{width:30px;height:30px;flex:none;border-radius:8px;background:var(--teal);display:grid;place-items:center}
+  .hero .contact b{display:block;font-size:15px}
+  .hero .contact span{font-size:10px;color:#bcdcea;display:block;line-height:1.3}
+  .wave{display:block;width:100%;height:34px;margin-top:-1px}
+
+  /* ---------- Section ---------- */
+  .sec{padding:34px 0 8px}
+  .sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:18px}
+  .sec-head .en{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+  .sec-title{font-size:20px;font-weight:800;color:var(--navy);position:relative;padding-left:13px}
+  .sec-title::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:5px;border-radius:3px;background:linear-gradient(180deg,var(--teal),var(--teal2))}
+
+  /* ---------- Company cards ---------- */
+  .ab-card{background:linear-gradient(180deg,#fff,var(--light2));border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+  .ab-card h3{font-size:15px;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .ab-card h3 .dot{width:8px;height:8px;border-radius:2px;background:var(--teal);transform:rotate(45deg)}
+  .ab-card p{font-size:13.5px;color:#3a4a54;margin-bottom:6px}
+  .ab-card ul{list-style:none;font-size:13px;color:#3a4a54}
+  .ab-card li{position:relative;padding-left:16px;margin-bottom:5px}
+  .ab-card li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--teal2)}
+
+  /* ---------- Timeline ---------- */
+  .timeline{margin-top:6px}
+  .tl{display:grid;grid-template-columns:72px 20px 1fr;gap:0;margin-bottom:20px}
+  .tl .yr{font-size:14px;font-weight:800;color:var(--navy);text-align:right;padding-right:10px;padding-top:2px;line-height:1.3}
+  .tl .axis{position:relative;display:flex;justify-content:center}
+  .tl .axis::before{content:"";position:absolute;top:0;bottom:-20px;width:2px;background:var(--line)}
+  .tl:last-child .axis::before{bottom:6px}
+  .tl .axis .node{width:13px;height:13px;border-radius:50%;background:var(--teal);border:3px solid #e0f5ec;z-index:1;margin-top:3px}
+  .tl .cnt{font-size:13.5px;color:#3a4a54;padding:0 4px 0 6px;line-height:1.6}
+  .tl .cnt b{color:var(--navy)}
+
+  /* ---------- Philosophy ---------- */
+  .phil{display:grid;gap:12px}
+  .phil .p{background:var(--navy);border-radius:16px;padding:18px;color:#fff;position:relative;overflow:hidden}
+  .phil .p:nth-child(2){background:linear-gradient(135deg,#0E4D75,#0B6E7A)}
+  .phil .p:nth-child(3){background:linear-gradient(135deg,#0B6E7A,#1FA97A)}
+  .phil .p .tag{font-size:11px;letter-spacing:3px;color:#cfe4f2;margin-bottom:6px}
+  .phil .p p{font-size:15px;font-weight:600;line-height:1.6}
+  .phil .p .bgword{position:absolute;right:-4px;bottom:-18px;font-size:72px;font-weight:900;color:rgba(255,255,255,.08);pointer-events:none}
+
+  /* ---------- Honors ---------- */
+  .honors{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .honor{background:var(--light2);border:1px solid var(--line);border-radius:13px;padding:14px;display:flex;gap:11px;align-items:center}
+  .honor .badge{width:38px;height:38px;flex:none;border-radius:10px;background:linear-gradient(135deg,var(--gold),#e0c078);display:grid;place-items:center;color:#fff}
+  .honor .badge svg{width:20px;height:20px}
+  .honor b{font-size:13px;color:var(--navy);line-height:1.35;display:block}
+  .honor span{font-size:11px;color:var(--muted)}
+
+  /* ---------- Products ---------- */
+  .prods{margin-top:8px}
+  .tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{flex:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:13px;padding:9px 15px;border-radius:999px;cursor:pointer;transition:.15s}
+  .tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:600}
+  .series-intro{font-size:13px;color:var(--muted);background:var(--light);border-left:3px solid var(--teal);padding:10px 13px;border-radius:0 10px 10px 0;margin-bottom:16px}
+  .series-block{margin-bottom:30px;scroll-margin-top:70px}
+  .series-title{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:10px;padding-left:12px;position:relative}
+  .series-title::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:4px;border-radius:2px;background:var(--teal2)}
+  .p-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .series-empty{grid-column:1/-1;text-align:center;padding:36px 16px;color:var(--muted);background:#f6f9fb;border:1px dashed var(--line);border-radius:14px;font-size:13.5px;letter-spacing:.5px}
+  .p-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 3px rgba(12,59,92,.05);cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
+  .p-card:active{transform:scale(.97)}
+  .p-card .hint{text-align:center;font-size:11px;color:var(--muted);margin-top:10px;display:flex;align-items:center;justify-content:center;gap:4px}
+  .p-card .hint svg{width:13px;height:13px}
+  .p-card .thumb{background:#fff;display:grid;place-items:center;padding:10px}
+  .p-card .thumb img{height:118px;width:auto;object-fit:contain}
+  .p-card .body{padding:10px 12px 12px}
+  .p-card .name{font-size:14.5px;font-weight:800;color:var(--navy);line-height:1.3}
+  .p-card .type{font-size:11px;color:var(--teal);font-weight:600;margin-top:3px;line-height:1.35}
+  .p-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  .p-card .tags span{font-size:10px;color:#36566b;background:#eaf3fa;border:1px solid #d8e7f1;padding:2px 6px;border-radius:6px}
+  .p-card .more{margin-top:10px;width:100%;border:none;background:var(--navy);color:#fff;font-size:12px;padding:8px;border-radius:9px;cursor:pointer;font-weight:600}
+  .p-card .more:active{transform:scale(.98)}
+  .p-detail{display:none;margin-top:10px;border-top:1px dashed var(--line);font-size:11.5px;color:#33454f;background:#fbfdfe;border-radius:9px;padding:9px 10px}
+  .p-detail.open{display:block}
+  .p-detail .row{margin-bottom:7px;line-height:1.55}
+  .p-detail .row b{color:var(--navy);font-weight:700}
+
+  /* ---------- CTA ---------- */
+  .cta{margin:20px 0 4px;background:linear-gradient(150deg,#0A2F4B,#0E4D75 60%,#0B6E7A);border-radius:20px;padding:26px 20px;color:#fff;text-align:center}
+  .cta h3{font-size:19px;font-weight:800}
+  .cta p{font-size:13px;color:#cfe4f2;margin:8px 0 16px}
+  .cta .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .cta a{color:#fff;text-decoration:none;font-size:14px;font-weight:600;border-radius:12px;padding:11px 18px;display:inline-flex;align-items:center;gap:8px}
+  .cta a.tel{background:var(--teal)}
+  .cta a.hot{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3)}
+
+  /* ---------- Modal ---------- */
+  .modal{position:fixed;inset:0;z-index:120;display:none;align-items:flex-end;justify-content:center}
+  .modal.open{display:flex}
+  .modal-mask{position:absolute;inset:0;background:rgba(8,28,44,.55);backdrop-filter:blur(3px)}
+  .modal-box{position:relative;width:100%;max-width:500px;max-height:86vh;overflow-y:auto;background:#fff;border-radius:20px 20px 0 0;padding:20px 20px 28px;animation:mslide .28s cubic-bezier(.2,.8,.3,1);-webkit-overflow-scrolling:touch}
+  @keyframes mslide{from{transform:translateY(46px);opacity:0}to{transform:none;opacity:1}}
+  .modal-close{position:absolute;top:12px;right:12px;width:42px;height:42px;border:none;border-radius:50%;background:var(--light);color:var(--navy);display:grid;place-items:center;cursor:pointer;z-index:2}
+  .m-thumb{background:#fff;border-radius:14px;display:grid;place-items:center;padding:20px;margin-bottom:14px}
+  .m-thumb img{height:200px;width:auto;object-fit:contain}
+  .m-name{font-size:21px;font-weight:800;color:var(--navy);padding-right:34px}
+  .m-type{font-size:13px;color:var(--teal);font-weight:600;margin-top:4px}
+  .m-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+  .m-tags span{font-size:11.5px;color:#36566b;background:#eaf3fa;border:1px solid #d8e7f1;padding:3px 9px;border-radius:7px}
+  .m-detail{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px;font-size:13.5px;color:#33454f}
+  .m-detail .row{margin-bottom:10px;line-height:1.6}
+  .m-detail .row b{color:var(--navy);font-weight:700;display:block;margin-bottom:2px}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);color:#bcdcea;margin-top:26px}
+  footer .wrap{padding:24px 18px 40px;font-size:12.5px}
+  footer b{color:#fff;font-size:14px;display:block;margin-bottom:8px}
+  footer p{line-height:2}
+  footer .copy{margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.12);font-size:11px;color:#8fb2c9}
+
+  @media (min-width:560px){
+    .p-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+    .hero h1{font-size:32px}
+    .p-card .thumb img{height:150px}
+    .p-card .name{font-size:16px}
+    .p-card .type{font-size:12px}
+    .p-card .tags span{font-size:11px;padding:3px 8px}
+    .p-card .more{font-size:13px;padding:9px}
+    .p-detail{font-size:12.5px;padding:11px 12px}
+    .modal{align-items:center;padding:24px}
+    .modal-box{border-radius:20px;max-height:88vh}
+  }
+
+  /* ---------- Floating quick nav ---------- */
+  .fab{position:fixed;right:16px;bottom:24px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+  .fab-menu{display:flex;flex-direction:column;align-items:flex-end;gap:8px;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .22s,transform .22s}
+  .fab.open .fab-menu{opacity:1;transform:none;pointer-events:auto}
+  .fab-item{background:#fff;color:var(--navy);border:1px solid var(--line);box-shadow:0 6px 18px rgba(10,42,66,.14);padding:10px 16px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;letter-spacing:.5px}
+  .fab-item:hover{background:var(--light)}
+  .fab-btn{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;border:none;box-shadow:0 8px 22px rgba(16,108,106,.35);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .2s}
+  .fab-btn:hover{transform:scale(1.05)}
+  .fab-btn svg{width:24px;height:24px}
+  @media (min-width:560px){
+    .fab{right:24px;bottom:30px}
+    .fab-btn{width:58px;height:58px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="logo"><img src="assets/logo.png" alt="华宝莱"></span><b>山东华宝莱生物工程</b></a>
+    <div class="navtabs">
+      <a href="#about">企业</a><a href="#history">历程</a><a href="#honor">资质</a><a href="#products">产品</a><a href="#contact">联系</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="brandline"><i></i> HUABAOLAI · BIOTECH</div>
+    <h1>山东华宝莱<br><span>生物工程</span>有限公司</h1>
+    <div class="en">SHANDONG HUABAOLAI BIOLOGICAL ENGINEERING</div>
+    <p class="slogan">以生物科技赋能绿色养殖<small>助力农业生态可持续发展</small></p>
+    <div class="stats">
+      <div><b>50+</b><span>绿色生物产品</span></div>
+      <div><b>4</b><span>产品系列</span></div>
+      <div><b>24</b><span>月保质期</span></div>
+      <div><b>全国</b><span>服务网络</span></div>
+    </div>
+    <div class="contact">
+      <a href="tel:0531-85904059"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.4-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span>电话<b>0531-85904059</b></span></a>
+      <a href="tel:400-081-7889"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m8 9 4 4 4-4"/></svg></span><span>服务热线<b>400-081-7889</b></span></a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,20 C240,45 480,0 720,15 C960,30 1200,5 1440,20 L1440,40 L0,40 Z" fill="#fff"/></svg>
+</section>
+
+<div class="wrap">
+
+  <!-- About -->
+  <section class="sec" id="about">
+    <div class="sec-head"><h2 class="sec-title">企业概况</h2><span class="en">ABOUT US</span></div>
+    <div class="ab-card">
+      <h3><span class="dot"></span>公司简介</h3>
+      <p>山东华宝莱生物工程有限公司成立于 <b>2019 年 10 月 31 日</b>，注册资本 500 万元，是一家专注于生物工程领域的高新技术型企业，立足山东、辐射全国。</p>
+      <p style="margin-top:8px"><b style="color:var(--navy)">核心定位：</b>集研发、生产、销售、技术服务于一体的<b>生物制剂与饲料添加剂综合服务商</b>，聚焦畜牧、水产、农生态领域的绿色生物产品开发与应用。</p>
+    </div>
+    <div class="ab-card">
+      <h3><span class="dot"></span>主营业务</h3>
+      <ul>
+        <li><b>生物制剂</b>：兽药原料及制剂技术开发、转让；饲料添加剂、天然植物饲料原料、微生物制剂生产销售</li>
+        <li><b>饲料相关</b>：饲料原料、饲料添加剂研发销售；中药材种植与原料供应</li>
+        <li><b>环保配套</b>：水处理服务及设备、消杀用品、医疗器械研发；货物与技术进出口</li>
+      </ul>
+    </div>
+    <div class="ab-card">
+      <h3><span class="dot"></span>三大优势</h3>
+      <ul>
+        <li><b>产品合规</b>：持有饲料添加剂生产许可，产品符合行业规范，适配畜牧、水产养殖绿色升级需求</li>
+        <li><b>区位渠道</b>：依托山东畜牧与农业产业集群，构建覆盖全国的销售与服务网络，支持进出口业务</li>
+        <li><b>全链服务</b>：从原料种植、研发生产到销售、技术支持一体化，提供定制化生物解决方案</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section class="sec" id="history">
+    <div class="sec-head"><h2 class="sec-title">发展历程</h2><span class="en">HISTORY</span></div>
+    <div class="timeline">
+      <div class="tl"><div class="yr">2019.10</div><div class="axis"><span class="node"></span></div><div class="cnt"><b>公司成立</b><br>济南华宝莱生物工程有限公司成立，布局生物饲料与兽药原料领域。</div></div>
+      <div class="tl"><div class="yr">2021</div><div class="axis"><span class="node"></span></div><div class="cnt"><b>标准升级</b><br>发布企业标准《天然植物饲料原料 金银花粗提物》，产品体系标准化升级。</div></div>
+      <div class="tl"><div class="yr">2022</div><div class="axis"><span class="node"></span></div><div class="cnt"><b>更名扩容</b><br>更名为山东华宝莱生物工程有限公司，注册地迁至聊城茌平，扩大生产基地规模。</div></div>
+      <div class="tl"><div class="yr">2026</div><div class="axis"><span class="node"></span></div><div class="cnt"><b>总部落地</b><br>注册地迁至山东省济南市高新区孙村街道孙村片区 35 号幸福连城国际激光谷。</div></div>
+      <div class="tl"><div class="yr">至今</div><div class="axis"><span class="node"></span></div><div class="cnt"><b>深耕致远</b><br>持续深耕微生物制剂、植物提取物等绿色生物产品，服务全国养殖与农业客户。</div></div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="sec">
+    <div class="sec-head"><h2 class="sec-title">企业理念</h2><span class="en">PHILOSOPHY</span></div>
+    <div class="phil">
+      <div class="p"><span class="bgword">使</span><div class="tag">使命 MISSION</div><p>以生物科技赋能绿色养殖，助力农业生态可持续发展。</p></div>
+      <div class="p"><span class="bgword">愿</span><div class="tag">愿景 VISION</div><p>成为国内领先的绿色生物制剂与饲料添加剂综合服务商。</p></div>
+      <div class="p"><span class="bgword">价</span><div class="tag">价值观 VALUE</div><p>诚信为本、创新驱动、品质至上、服务致远。</p></div>
+    </div>
+  </section>
+
+  <!-- Honor -->
+  <section class="sec" id="honor">
+    <div class="sec-head"><h2 class="sec-title">资质荣誉</h2><span class="en">QUALIFICATIONS</span></div>
+    <div class="honors">
+      <div class="honor"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="m9.1 9 2 2 3.8-4.2"/></svg></span><div><b>质量管理体系认证</b><span>GB/T 19001</span></div></div>
+      <div class="honor"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 5.7L20 9l-5 4 1.9 5.7L12 15l-4.9 3.7L9 13 4 9l6.1-.3z"/></svg></span><div><b>环境管理体系认证</b><span>ISO 14001</span></div></div>
+      <div class="honor"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1M9 13h1m4 0h1M9 17h1m4 0h1"/></svg></span><div><b>AAA 企业信用等级</b><span>信用等级证书</span></div></div>
+      <div class="honor"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><b>饲料生产许可</b><span>生产资质</span></div></div>
+      <div class="honor"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6 4 4 6-8"/><path d="M14 7h6v6"/></svg></span><div><b>饲料行业优秀品牌</b><span>企业荣誉</span></div></div>
+      <div class="honor"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8"/></svg></span><div><b>营业执照</b><span>合法经营</span></div></div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="sec" id="products">
+    <div class="sec-head"><h2 class="sec-title">产品中心</h2><span class="en">PRODUCTS</span></div>
+    <div class="tabs" id="tabs"></div>
+    <div id="pgrid"></div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <h3>需要产品方案？</h3>
+    <p>华宝莱为您提供绿色、高效的生物养殖解决方案</p>
+    <div class="row">
+      <a class="tel" href="tel:0531-85904059">拨打 0531-85904059</a>
+      <a class="hot" href="tel:400-081-7889">服务热线 400-081-7889</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <b>山东华宝莱生物工程有限公司</b>
+    <p>SHANDONG HUABAOLAI BIOLOGICAL ENGINEERING CO., LTD.</p>
+    <p style="margin-top:8px">生产地址：山东省济南市高新区孙村街道孙村片区 35 号幸福连城国际激光谷二期 6-101-1 层<br>电话：0531-85904059　邮编：25010<br>服务热线：400-081-7889</p>
+    <div class="copy">© 山东华宝莱生物工程有限公司　以生物科技赋能绿色养殖</div>
+  </div>
+</footer>
+
+<!-- 产品详情弹窗 -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-mask" id="modalMask"></div>  <div class="modal-box" role="dialog" aria-modal="true" aria-label="产品详情">
+    <button class="modal-close" id="modalClose" type="button" aria-label="关闭"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <div class="m-thumb"><img id="mImg" alt=""></div>
+    <div class="m-name" id="mName"></div>
+    <div class="m-type" id="mType"></div>
+    <div class="m-tags" id="mTags"></div>
+    <div class="m-detail" id="mDetail"></div>
+  </div>
+</div>
+
+<div class="fab" id="fab">
+  <div class="fab-menu">
+    <button class="fab-item" data-target="series-s1" type="button">水产系列</button>
+    <button class="fab-item" data-target="series-s5" type="button">牛羊系列</button>
+  </div>
+  <button class="fab-btn" id="fabBtn" type="button" aria-label="产品目录"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4.2" cy="6" r="1.1" fill="currentColor" stroke="none"/><circle cx="4.2" cy="12" r="1.1" fill="currentColor" stroke="none"/><circle cx="4.2" cy="18" r="1.1" fill="currentColor" stroke="none"/></svg></button>
+</div>
+
+<script>
+/* ============ 产品数据（4 大系列） ============ */
+window.PRODUCTS = {
+  s1: {
+    name:'解毒抗应激补钙系列', intro:'解毒、抗应激、补钙等综合调理产品，保障水产动物在蜕壳、转季、放苗等关键期的健康生长。',
+    items:[
+      {name:'速补100', type:'0.2%微量元素预混合饲料Ⅰ型', tag:['平衡机体组织','补充矿物质','避免倒藻','补充脱壳元素'],
+       ingredient:'蛋白铁、蛋白锰、蛋白锌、蛋白铜、蛋白硒等微量元素，稀释剂钙、镁',
+       use:'全池泼洒：池塘每亩1米水深200-300克；高位池300-500克；小棚100g/棚；工厂化每立方1-2克；拌料每公斤饲料3-5克。',
+       note:'不可与抗生素、消毒剂同时使用；开封后及时使用。', spec:'1kg/袋×15袋/件', shelf:'24个月', img:'subu100.png', effect:'补充蜕壳期所需微量元素，快速恢复蜕壳后壳硬度、提高成活率；避免软壳、蜕壳不遂、虾体抽筋、断须等矿物质缺乏症；稳定藻相，增强抗应激能力'},
+      {name:'速补', type:'0.2%水产用复合矿物元素预混合饲料', tag:['补充钙镁钾','虾蟹软硬壳','保虾蟹保苗'],
+       ingredient:'铁、铜、锌、锰、钠等微量元素',
+       use:'拌饵料0.2%添加或150-200g/亩全池均匀抛撒，建议7-15天一次，定期使用。',
+       note:'注意存放时防止受潮。', spec:'1000克/袋', shelf:'24个月', img:'subu.png', effect:'补充钙镁钾等微量元素，促进虾蟹软硬壳、保虾蟹保苗，辅助蜕壳硬壳'},
+      {name:'肠优宝', type:'混合型饲料添加剂 液态丁酸梭菌', tag:['白便拖便','修复肠黏膜','空肠空胃','抑制有害菌'],
+       ingredient:'丁酸梭菌及其代谢产物、营养剂',
+       use:'用本品1000ml泼洒6-10亩，拌料200公斤，建议7-15天一次，定期使用。',
+       note:'不可与抗生素、消毒剂同用(间隔≥3天)；开封尽快用完。', spec:'1000ml/瓶×12瓶/箱', shelf:'24个月', img:'changyoubao.png', effect:'消除高蛋白饲料带来的肝胆负担；调节肠道微生态平衡、增进食欲；调节菌藻平衡、分解有机物、缓解水体富营养化'},
+      {name:'应激vce', type:'混合型饲料添加剂 L-抗坏血酸（维生素C）', tag:['提高免疫','提升能量储备','促进伤口愈合','增强抗应激'],
+       ingredient:'维生素C、牛磺酸、维生素E、赖氨酸等',
+       use:'每袋6-10亩·米水深；每袋拌料300公斤，连用3-5天，长期使用效果更佳。',
+       note:'注意存放时防止受潮；开封后尽快用完并密封。', spec:'1000g/袋×10袋 1000g/袋×20袋', shelf:'24个月', img:'yingjivce.png', effect:'增强抗应激能力，减少拉网、换水、运输等应激反应；促进伤口愈合和机体恢复；增强抗病能力、降低畸形率'},
+      {name:'应激生长活力宝', type:'混合型饲料添加剂 L-抗坏血酸（维生素C）', tag:['促进生长','抵抗应激','修复机能','增加存活'],
+       ingredient:'维生素C、牛磺酸、维生素E、赖氨酸等',
+       use:'每袋6-10亩·米水深；每袋拌料300公斤，连用3-5天。',
+       note:'注意存放时防止受潮；开封后尽快用完并密封。', spec:'500g/袋×20袋/件', shelf:'24个月', img:'yingjishengzhang.png', effect:'增强抗应激、促进伤口愈合、增强抗病力；促进生长、修复机能、增加存活'},
+      {name:'肝胆宝', type:'天然植物粗提物饲料原料 当归茯苓膏', tag:['保肝护肝','强化代谢','抑菌抗氧化','促进采食'],
+       ingredient:'当归、茯苓',
+       use:'混饲：每瓶500克拌料300-400kg；泼洒：每瓶500克泼洒6-10亩，连用3-5天。',
+       note:'运输时避免受雨雪浸湿，不得与有毒有害物质混运。', spec:'500g/瓶', shelf:'18个月', img:'gandanbao.png', effect:'改善肝功能，促进肝损伤修复和肝细胞再生；提高胆汁分泌、疏通胆道、排除毒素；增强抗应激和抗病力、改善生长性能'},
+      {name:'肝胆康肽', type:'天然植物饲料原料 姜黄粗提物', tag:['护肝胆','强代谢','增强抗病'],
+       ingredient:'姜黄',
+       use:'拌饵料2%添加或150-200g/亩全池均匀抛撒，建议7-15天一次，定期使用。',
+       note:'注意存放时防止受潮；开封后尽快用完并密封。', spec:'1000g/袋×20袋/桶', shelf:'24个月', img:'gandankangtai.png', effect:'护肝胆、强代谢、增强抗病，促进机体肝胆健康'},
+      {name:'强效肝胆康', type:'胆汁酸', tag:['保肝促长','肝胆综合','促进转肝'],
+       ingredient:'胆汁酸、牛磺酸、蒙脱石等',
+       use:'拌料：1袋拌料400斤（空桶加水边倒边搅拌）；泼洒：1袋泼洒6-10亩。',
+       note:'内源性保肝产品可长期使用；可与微生态制剂一起使用；与维C、多维、多矿同用易絮凝属正常。', spec:'200g/袋×40袋/件', shelf:'24个月', img:'qiangxiaogandankang.png', effect:'保肝解毒、清除内毒素、修复肠道；促进饲料转化吸收，日常保肝、转肝更顺利'},
+      {name:'伍黄搭档', type:'天然植物饲料原料 姜黄粗提物', tag:['肠炎出血','烂身腐皮','抗菌消炎','保肝护胆'],
+       ingredient:'姜黄、大黄、黄芩、黄连、黄柏、金银花',
+       use:'化水泼洒每袋6-10亩·米全池泼洒；拌饵投喂每袋拌料100公斤连用4-5日。',
+       note:'注意存放时防止受潮；开封后尽快用完并密封。', spec:'500g/袋×20袋/件', shelf:'24个月', img:'wuhuangdang.png', effect:'清热泻火、解毒素、消水肿、镇静安神；调理烂鳃、肠炎、赤皮、出血；抑菌解毒、增强免疫抗病力。主治细菌性败血症、烂鳃、肠炎、赤皮'},
+      {name:'六黄康肽', type:'天然植物饲料原料 金银花粗提液', tag:['抑菌','解毒','清热','凉血'],
+       ingredient:'金银花、黄连、大黄、黄芪、黄芩、黄柏等',
+       use:'拌饵：提取液1-5克/Kg饲料连用3-5天；泼洒：0.2-1ml/m³水体；外池250ml用6-10亩。',
+       note:'使用量根据饲料含水量、温度湿度酌情添加；务必与饲料混合均匀。', spec:'250ml/瓶×40瓶/箱', shelf:'两年', img:'liuhuangkangtai.png', effect:'抑菌、解毒、清热、凉血；主治细菌性败血症、烂鳃、肠炎和赤皮，温和型中药抑菌消毒剂'},
+      {name:'超浓虹彩康原液', type:'天然植物饲料原料 藿香粗提液', tag:['清热解毒','抗病毒','虹彩病毒'],
+       ingredient:'藿香、板蓝根、金银花、薄荷、广藿香油、甘草浸膏、黄芪等',
+       use:'拌料内服5-10ml/kg连用3-5天；外池泼洒250ml用6-10亩，连续3-5天。',
+       note:'存放于阴凉、通风、遮光处，避免与有毒有害物质混存。', spec:'250ml/瓶×40瓶/箱', shelf:'两年', img:'chaononghongcai.png', effect:'清热解毒、抗病毒；主治鱼虾虹彩病毒（空肠空胃、肝胰腺发白、外壳变软、体表及鳃出血等）'},
+      {name:'肠畅', type:'混合型饲料添加剂 丁酸梭菌', tag:['修复肠粘膜','调控水体','替抗促长'],
+       ingredient:'丁酸梭菌。载体：丁酸钠、粪硫菌等',
+       use:'拌料内服200克拌料100公斤；泼洒每立方米水体2-3克。',
+       note:'不可与抗生素、消毒剂同用(间隔≥3天)；开封尽快用完。', spec:'200g/袋', shelf:'24个月', img:'changchang.png', effect:'修复肠黏膜、调控水体、替抗促长'},
+      {name:'纤虫克星', type:'水产微量元素预混合饲料', tag:['菌虫双抗','防控寄生虫','抑制有害菌','促进伤口愈合'],
+       ingredient:'锰、锌、1,8-桉叶素',
+       use:'100克泼洒2-3亩·米水深；100克拌料200斤，连用3-5天早晚各一次，每半月一次。',
+       note:'寄生虫感染严重时建议泼洒和拌料同时使用。', spec:'100克/袋×50袋/件', shelf:'24个月', img:'xianchongkexing.png', effect:'安全驱虫、不伤养殖动物不伤水；抑菌护肠、促摄食、促进伤口愈合、抑制肠道炎症'},
+      {name:'美激灵', type:'混合型饲料添加剂 液态虾青素', tag:['增亮体色','强抗应激','提高活力','保苗促长'],
+       ingredient:'虾青素、维生素E、VC等',
+       use:'拌料每瓶拌饵料60-80kg；泼洒工厂/大棚300-500m³/瓶、池塘3-5亩/瓶。',
+       note:'勿与其它氧化、消毒物质混合使用。', spec:'500ml/瓶', shelf:'24个月', img:'meijiling.png', effect:'提高抗应激能力；提高虾蟹虾青素含量、体色鲜亮；抗氧化、增强抵御恶劣环境能力；增加饵料诱食性'},
+      {name:'美莱宝', type:'混合型饲料添加剂 虾青素', tag:['增亮体色','强抗应激','补充营养','提高免疫'],
+       ingredient:'虾青素、维生素E等',
+       use:'泼洒每亩每米水深100克用6-8亩；拌料100克拌料50-100kg，生长关键期可加量。',
+       note:'勿与其它氧化、消毒物质混合使用。', spec:'100g/袋×50袋/桶', shelf:'24个月', img:'meilaibao.png', effect:'提高抗应激、增亮体色、补充营养、提高免疫'},
+      {name:'弧菌净', type:'混合型饲料添加剂 枯草芽孢杆菌', tag:['生物杀菌','空肠白便','靶向裂解','无耐药性'],
+       ingredient:'枯草芽孢杆菌、复合噬菌体、粪肠球菌、拮抗因子、增效剂等',
+       use:'化水后全池均匀泼洒，每袋1-2亩，每5-7天一次；按投喂量1%添加每天1-2次。',
+       note:'开封后不宜久放；本品为活菌制剂，禁止与消毒剂同时使用。', spec:'200g/袋×20袋/箱', shelf:'24个月', img:'hujunjing.png', effect:'靶向裂解弧菌（副溶血、哈维、鳗弧、荧光、溶藻、坎氏等）；广谱抑菌、阻断传播；纯生物制剂、安全无残留'},
+      {name:'猎弧Ⅰ号', type:'纳米银离子制剂', tag:['黄绿弧菌','对虾弧菌','苗期可用'],
+       ingredient:'纳米银离子、稳定剂、增效渗透剂',
+       use:'外塘2-3亩，内塘800-1000立方水体；内服拌料80-100斤，预防减半。',
+       note:'禁止与强碱强酸同用；建议使用后48小时补充有益菌；开封尽快使用。', spec:'500ml瓶×20瓶/箱', shelf:'24个月', img:'liehuyihao.png', effect:'纳米银离子杀菌，杀灭池中细菌、游离病毒、真菌、霉菌及藻类；对弧菌、虹彩病毒、白点病毒感染有良好预防和治疗效果'},
+      {name:'解毒应激VC钙', type:'混合型饲料添加剂 L-抗坏血酸（维生素C）', tag:['提高种苗存活','抗应激','改善代谢'],
+       ingredient:'维生素C、牛磺酸、葡萄糖等',
+       use:'每袋6-10亩·米水深；每袋拌料200公斤，连用3-5天。',
+       note:'注意存放时防止受潮；开封后尽快用完并密封。', spec:'1000g/袋', shelf:'24个月', img:'jieduvcga.png', effect:'提高种苗存活率、适应力、抗应激能力；减轻有毒物质伤害、改善中毒；改善机体代谢、增强活力'},
+      {name:'维动力', type:'混合型饲料添加剂 液态牛磺酸', tag:['补充营养','诱食增料','提升免疫','保护肝胆'],
+       ingredient:'牛磺酸、复合维生素、免疫多糖、氨基酸、电解质、微量元素、小肽等',
+       use:'泼洒每亩每米1000ml用8-10亩；苗室每立方水体0.5-1ml；内服每瓶拌饵100-160公斤。',
+       note:'瓶底少量沉淀摇后使用，不影响效果。', spec:'1000ml/瓶×12瓶/箱', shelf:'24个月', img:'weidongli.png', effect:'补充氨基酸、维生素、微量元素，平衡营养、增进食欲、促进生长；提高苗种成活率和整齐度；提高抗病力；抵抗应激反应；诱食促生长、提高饲料转化率'},
+      {name:'维其特', type:'水产复合预混合饲料', tag:['均衡补充营养','增强免疫','促进生长','14种维生素'],
+       ingredient:'维生素A乙酸酯、VD3、VE、VB2、VC、赖氨酸、低聚异麦芽糖、葡萄糖等',
+       use:'全池泼洒8-10亩/袋；拌料每吨饲料添加5000克，连用3-5天。',
+       note:'少量结块属正常现象；开封后尽快使用。', spec:'500克/袋×15袋/桶', shelf:'24个月', img:'weiqite.png', effect:'富含多种维生素和微量元素、溶解快易吸收；提高生产性能、促进生长和骨骼发育；提高对高温、台风、暴雨等环境突变的适应能力'},
+      {name:'诱食肥壮大', type:'混合型饲料添加剂 液态牛磺酸', tag:['强效诱食','强肝利胆','提高存活率'],
+       ingredient:'牛磺酸、高稳VC、B族维生素等',
+       use:'外用每亩1米用200-250克（1000g用3-5亩）；拌料每100克拌料40公斤。',
+       note:'注意存放时防止受潮；开封后尽快用完并密封。', spec:'1000ml/瓶×12瓶/箱', shelf:'24个月', img:'youshifeizhuang.png', effect:'改善饵料适口性、促进食欲、提高采食量；吸附分解黄曲霉素等有害物质；解除胆汁堵塞、强肝利胆；提高增重率、缩短养殖周期'},
+      {name:'绿威宝', type:'混合型饲料添加剂 液态柠檬酸', tag:['解毒','调水','诱食','促消化','抗应激'],
+       ingredient:'柠檬酸、牛磺酸、有机酸等',
+       use:'全池泼洒每亩1米水深300毫升（1000ml用3-5亩），建议7-15天一次。',
+       note:'注意存放时防止受潮。', spec:'5Kg/桶×4桶/箱 25kg/桶', shelf:'24个月', img:'lvweibao.png', effect:'降解水体重金属、氨氮、硫化氢等有害物质毒性；抗应激；稳水调水、调节pH、保持藻相平衡；去除水草污物'},
+      {name:'水卫士', type:'天然植物饲料原料 姜黄粗提物', tag:['解毒调水','稳定藻相','去除油膜','净化水质'],
+       ingredient:'柠檬酸、多元有机酸、表面活性剂等',
+       use:'兑水稀释后全池均匀泼洒，一桶用60-80亩/米水体，水质恶化酌情加量。',
+       note:'不可使用金属容器盛装；开封后尽快用完。', spec:'5000mL/桶×4桶/箱', shelf:'24个月', img:'shuiweishi.png', effect:'对水草去污、改善萎缩漂浮腐烂发黄；解毒、降解络合氨氮亚硝酸盐重金属；稳水、防止藻类老化倒藻、保持水色肥活嫩爽'},
+      {name:'解毒碧水宝', type:'混合型饲料添加剂 液态柠檬酸', tag:['解毒调水','净化水质','祛除油膜','增加溶氧'],
+       ingredient:'柠檬酸、有机酸等',
+       use:'全池泼洒每亩1米水深300毫升（1Kg用3-5亩），建议7-15天一次。',
+       note:'注意存放时防止受潮。', spec:'5Kg/桶×4桶/箱 25kg/桶', shelf:'24个月', img:'jiedubishuibao.png', effect:'降解水体重金属、氨氮、硫化氢、药物残留等有害物质毒性；抗应激；稳水调水、调节pH、保持藻相平衡；去除水草污物'},
+      {name:'蓝精灵', type:'混合型饲料添加剂 液态酸度调节剂', tag:['去除油膜','调水解毒','分解毒素'],
+       ingredient:'酸度调节剂、表面活性剂',
+       use:'全池泼洒每亩1米水深每1公斤用3-5亩，建议7-15天一次。',
+       note:'运输中防止日晒雨淋、包装破损，严禁与有毒有害物质混运。', spec:'25公斤 2000ml/瓶×8瓶/件', shelf:'24个月', img:'lanjingling.png', effect:'表面活性高、快速打开油膜、提高溶氧；起泡活化水质；螯合重金属、降低毒性；转化有机质净化水质；降解氨氮亚硝酸盐硫化氢'}
+    ]
+  },
+  s2: {
+    name:'微生物系列', intro:'高活性益生菌制剂，净化水质、调节肠道、分解残饵，替抗促长、绿色安全。',
+    items:[
+      {name:'莱生源', type:'硫化氢氧化细菌+耐低氧芽孢杆菌', tag:['去硫化氢','无需活化','生物改底'],
+       ingredient:'硫化氢氧化细菌和多种耐低氧芽孢杆菌科学配伍而成',
+       use:'直接抛丢或化水泼洒，50-80克/亩（每包250克用3-5亩），每10天一次。',
+       note:'刚消毒过的塘口，建议48小时后再使用。', spec:'250克/袋×30袋/箱', shelf:'18个月', img:'laishengyuan.png', effect:'强力分解淤泥中有机物并转化为藻类营养、稳定藻相；去除底泥硫化氢、氨氮、亚硝酸盐、甲烷等有害物质；改善黑水、红水等老化水体；增强底泥自净能力'},
+      {name:'亚氨克星A+B', type:'粪肠球菌+植物乳杆菌+酿酒酵母', tag:['高活性絮团','消除氨氮亚硝酸盐','抑制弧菌'],
+       ingredient:'粪肠球菌、硝化细菌、植物乳杆菌、酵母菌、复合芽孢杆菌及酶制剂，活菌数≥300×10⁸CFU/g',
+       use:'每袋配营养包+100-200L水+2-3公斤红糖，曝气活化24-48小时；小棚虾每100升菌液15-20张棚，外塘20-30亩，一周一次。',
+       note:'不可与抗生素、消毒剂等同时使用。', spec:'呼吸袋活性菌营养包+复合菌包套装，3套/桶，净7.5kg', shelf:'18个月', img:'yaankexing.png', effect:'快速消除水体氨氮、亚硝酸盐；强力分解有机物；抑制弧菌等有害菌繁殖，形成优势菌群'},
+      {name:'粪硫菌', type:'超浓缩复合新一代原菌', tag:['调水净水','改善底部','分解残饵','晴雨两用'],
+       ingredient:'液态植物乳杆菌、粪硫菌、光合菌等',
+       use:'日常调水每亩1米200-300mL；水质恶化/氨氮亚盐偏高400-500mL，连用2次间隔3-5天。',
+       note:'存在异味，避免直接接触皮肤眼睛，不慎接触立即用清水冲洗。', spec:'5L/桶×4桶/箱', shelf:'12个月', img:'fenliujun.png', effect:'除臭解毒，分解硫化物、降解氨氮亚硝酸盐；培水益藻、促进有益藻类生长；生物改底、活化底部污泥增强自净'},
+      {name:'青苔克星', type:'混合型饲料添加剂 枯草芽孢杆菌', tag:['控制青苔','肥水调水'],
+       ingredient:'青苔分解酶与拮抗菌复合菌群及其代谢产物等',
+       use:'化水全池泼洒，2-3天可看到青苔上浮；每亩每米用1桶用30-50亩，水温10℃以上效果佳。',
+       note:'溶氧低塘口需增氧；刚消毒塘口48小时后再使用。', spec:'10kg/桶/25kg/桶', shelf:'12个月', img:'qingtaikexing.png', effect:'竞争水体营养，控制和减缓青苔生长；促进氮循环；分解青苔转化为营养物质、兼具肥水效果'},
+      {name:'肽中肽', type:'天然植物饲料原料 人参粗提物', tag:['99%体外吸收小肽','20多种氨基酸','提高免疫力'],
+       ingredient:'人参粗提液',
+       use:'拌饵料0.25%添加或150-200克/亩全池均匀泼洒，建议7-15天一次。',
+       note:'瓶底少量沉淀摇匀后使用，不影响效果。', spec:'5000ml/瓶×4瓶/箱 25kg/桶', shelf:'24个月', img:'taizhongtai.png', effect:'100%水溶性小肽、富含氨基酸（体外吸收率99.9%）；提高免疫力、促进肝脏修复保护；提高抗恶劣环境能力、抗感染病毒；长期使用集中脱壳、壳厚壳亮、体色鲜美'},
+      {name:'发酵有机酸', type:'微生物发酵纯有机酸', tag:['降解氨氮亚硝酸盐','抗菌抑菌','肥水培藻','改善肠道'],
+       ingredient:'酸度调节剂、牛磺酸、乳酸、柠檬酸等',
+       use:'1000ml用于3-5亩/米水深泼洒；100公斤饲料添加1000克拌料投喂。',
+       note:'运输中防止日晒雨淋、包装破损。', spec:'5000ml/瓶×4瓶/件', shelf:'24个月', img:'fajiaoyoujisuan.png', effect:'纯有机酸调节pH、减少渗透压；促进诱食、促消化；补充钾元素；高温季节提高采食量和存活率；螯合还原藻毒素'},
+      {name:'超强乳酸菌粉', type:'植物乳杆菌、粪肠球菌等', tag:['降解氨氮亚盐','降低PH','抑制蓝藻弧菌','强力诱食'],
+       ingredient:'植物乳杆菌、粪肠球菌、屎肠球菌、凝结芽孢杆菌等，有效活菌数≥200亿/g',
+       use:'1kg菌粉+3-5公斤红糖+200公斤水密封发酵2-3天；泼洒每亩用菌液2-3升；拌料1KG菌液拌80-100公斤。',
+       note:'培养用水最好纯净水或深井地下水；培养温度25-35℃；不可与杀菌消毒剂同时使用。', spec:'500g/袋×20袋/件 1000g/袋×10袋/件', shelf:'24个月', img:'chaoqiangruansuan.png', effect:'降解氨氮、亚盐、硫化氢；降低pH、提高溶氧；抑制蓝藻、弧菌、假单胞菌；改善肠道微生态、促进免疫；强力诱食、促消化'},
+      {name:'光合菌原液', type:'海洋红螺菌、红球假单孢菌', tag:['快速分解有机物','净化水质','开口饵料'],
+       ingredient:'海洋红螺菌、红球假单孢菌等',
+       use:'调水500-1000ml/亩，每10天一次；育苗每立方米水体3-5ml，每3天一次。',
+       note:'营养丰富，适合苗种作为开口饵料，明显提高成活率。', spec:'5L/桶×4桶/箱 20L/桶', shelf:'—', img:'guanghejun.png', effect:'营养丰富、适合作开口饵料提高成活率；促进生长发育、提高产量；净化水质、分解有机物、降氨氮亚硝酸盐硫化氢；培养有益菌、抑制有害蓝藻；增强抗病力'},
+      {name:'浓缩EM菌', type:'混合型饲料添加剂 枯草芽孢杆菌', tag:['分解残饵','调水净水','诱食增长','增强免疫'],
+       ingredient:'枯草芽孢杆菌、粪肠球菌、乳酸菌、酵母菌、双歧菌等',
+       use:'泼洒1袋5-10亩；内服1袋拌100kg料。',
+       note:'提高饲料利用率，降低饲养成本，提高成活率。', spec:'500g/袋×20袋/箱', shelf:'24个月', img:'nongsuoemjun.png', effect:'促进生长、提高饲料利用率、降低饲养成本、缩短养殖周期；提高免疫、减少疾病、提高成活率；降解氨态氮、亚硝酸盐、硫化氢、净化水质'},
+      {name:'G1000', type:'混合型饲料添加剂 枯草芽孢杆菌', tag:['改善肠道','调理水色','清除泡沫','降氨氮'],
+       ingredient:'枯草芽孢杆菌、粪肠球菌、酿酒酵母、地衣芽孢杆菌、滑石粉（稀释剂）',
+       use:'每袋使用3-5亩，加水稀释后全池泼洒。',
+       note:'复合芽孢调节菌群平衡，分解残饵、抑制有害藻类。', spec:'500g/袋×20袋', shelf:'24个月', img:'g1000.png', effect:'调节菌群生态平衡、减少有害菌繁殖；分解饲料大分子物质、促进消化吸收；抑制有害藻类、改善水色；分解残饵粪便、清洁水草'},
+      {name:'青苔分解酶', type:'混合型饲料添加剂 枯草芽孢杆菌', tag:['生物除苔','不伤鱼虾','不伤水草'],
+       ingredient:'枯草芽孢杆菌、解淀粉芽孢及发酵代谢产物',
+       use:'化水全池泼洒，2-3天青苔上浮；每亩每米1桶用25-40亩，水温10℃以上效果佳。',
+       note:'刚消毒过的塘口，建议48小时后再使用。', spec:'10kg/桶 25kg/桶', shelf:'24个月', img:'qingtaifenjiei.png', effect:'竞争营养、控制和减缓青苔生长；促进氮循环；分解青苔转化为营养物质、兼具肥水效果'},
+      {name:'超强乳酸金砖', type:'混合型饲料添加剂 粪肠球菌', tag:['调节水质','调节肠道','降低发病率'],
+       ingredient:'大豆胚芽粉、玉米面、米糠、麸皮、嗜酸乳杆菌、粪肠球菌等，有效活菌数≥100×10⁸CFU/g',
+       use:'1kg本品+5kg红糖+100升水密闭发酵48-72小时；泼洒每亩2000-2500ml；拌料每100kg饲料0.5kg菌液。',
+       note:'培养用水最好纯净水或深井水；培养温度20-30℃；不可与杀菌消毒剂同时使用。', spec:'1000克/块，10块/桶或12块/箱', shelf:'18个月', img:'chaoqiangruansuanjinzhuan.png', effect:'调节水质、促进有益藻类生长；调节肠道菌群、防止肠道致病菌繁殖；降解亚硝酸盐、氨氮、硫化氢；抑制蓝藻弧菌假单胞菌；强力诱食、提高采食量'},
+      {name:'浓缩EM菌', type:'混合型饲料添加剂 液态植物乳杆菌', tag:['分解残饵','控制藻类','净化水质','降解氨氮'],
+       ingredient:'芽孢杆菌、粪肠球菌、乳酸菌、酵母菌等',
+       use:'每袋3-5亩·米水深；每袋拌料300公斤，连用3-5天。',
+       note:'菌群选自初代菌种，繁殖力强，效果稳定，可抑制蓝藻爆发。', spec:'1000g/袋×10袋 1000g/袋×20袋', shelf:'24个月', img:'nongsuoemjun2.png', effect:'促进有益藻繁殖、维持藻相菌相平衡、抑制蓝藻；调节水质、改善不良水色、除臭去泥皮；增强诱食、促进消化、降低饵料系数'},
+      {name:'超浓乳酸宝', type:'嗜酸乳杆菌、干酪乳酸菌等', tag:['调节水质','健康肠道','调节PH值'],
+       ingredient:'嗜酸乳杆菌、干酪乳酸菌、双歧杆菌、丁酸梭菌及其代谢产物',
+       use:'拌料每吨饲料添加10L；泼洒苗室每立方3-5ML、池塘每1公斤用6-8亩，7-15天一次。',
+       note:'避免与其它药物同时使用；低温或阴凉处保存。', spec:'1KG/瓶×15瓶/箱', shelf:'24个月', img:'chaonongruansuabao.png', effect:'产酸调节养殖水体pH、分泌促生长因子；调节肠道菌群平衡、抑制肠道致病菌；分解塘底污泥残饵粪便、净化水质；抑制有害藻菌繁殖、降低发病率'}
+    ]
+  },
+  s3: {
+    name:'改底系列', intro:'强力氧化改底、增氧除臭，分解残饵粪便，改善池塘底部环境与水质。',
+    items:[
+      {name:'铁甲一号', type:'高铁酸钾制剂', tag:['改底杀菌','灭杀虫卵','降解氨氮','改底除臭'],
+       ingredient:'高铁酸钾、表面活性剂，有效含量≥20%',
+       use:'全池均匀抛撒：常规100-200g/亩·米水深；底质或水质恶化200-300g/亩·米，可定期或长期使用。',
+       note:'不得与酸性物质、还原剂、活菌制剂同时使用；严禁受潮和暴晒。', spec:'2000g/袋×5袋/桶', shelf:'18个月', img:'tiejia.png', effect:'改底杀菌、灭杀虫卵、降解氨氮、改底除臭，强氧化改底'},
+      {name:'底清', type:'过硫复合物30%', tag:['改底除臭','分解底泥','改底调水','降解氨氮'],
+       ingredient:'过硫复合物30%、载体等',
+       use:'直接将本品抛撒于水体中，每桶用60-100亩，每10-15天一次。',
+       note:'天气突变等复杂情况，请在技术老师指导下使用。', spec:'10Kg/桶', shelf:'—', img:'diqing.png', effect:'改良底质、持续分解池底残饵粪便死苔死藻、抑制有害菌；促进肥水、增加透明度、促藻类繁殖；分解池底氨氮亚硝酸盐硫化氢'},
+      {name:'底爽', type:'过硫复合物20%', tag:['强氧化','改底彻底','改善水环境','除臭'],
+       ingredient:'过硫复合物20%',
+       use:'直接将本品抛撒于水体中，每桶用60-100亩，每10-15天一次。',
+       note:'天气突变等复杂情况，请在技术老师指导下使用。', spec:'10Kg/桶', shelf:'24个月', img:'dishuang.png', effect:'改底、调水、抑菌、平衡溶氧量、调节pH；强氧化改底更彻底、除臭'},
+      {name:'臭氧底清', type:'过硫复合物30%', tag:['改底除臭','分解底泥','改底调水','降解氨氮'],
+       ingredient:'过硫复合物30%、载体等',
+       use:'直接将本品抛撒于水体中，150-250g/亩，每10-15天一次。',
+       note:'天气突变等复杂情况，请在技术老师指导下使用。', spec:'10Kg/桶', shelf:'24个月', img:'chouyangdiqing.png', effect:'改底除臭、分解底泥、改底调水、降解氨氮；减少底部耗氧因子、增加溶氧、除黑除臭'},
+      {name:'粪硫菌底改', type:'粪硫菌、硫化氢氧化细菌', tag:['除黑除臭','去硫解毒','降解氨氮','低温可用'],
+       ingredient:'粪硫菌、硫化氢氧化细菌、多种活菌微生物、功能性载体',
+       use:'将本品直接撒入水体，每公斤用3-4亩/米，水质恶化严重加倍使用。',
+       note:'不得与消毒剂、杀虫剂、抗生素同时使用；开封后密封保存。', spec:'10Kg/桶 500g/袋×20袋/件', shelf:'24个月', img:'fenliujundi.png', effect:'分解吸收残饵粪便有机污染物、减少淤泥沉积；分解活化老化淤泥、释放硫化氢沼气；控制蓝绿藻、稳定酸碱度、消除水体发黑发红浑浊；不消耗溶氧'},
+      {name:'底改王', type:'四羟甲基硫酸磷制剂', tag:['解毒活底','减少淤泥','分解残饵'],
+       ingredient:'四羟甲基硫酸磷、无水硫酸钠复合物、表面活性剂等',
+       use:'生物清塘200克/亩；调水改底200-300克/亩，每10天一次，底质差每7天一次；工厂化500克/亩每5天一次。',
+       note:'使用前后3天不可使用抗菌药物、消毒剂；不宜立即换水，晴天上午使用为宜。', spec:'500g/袋×20袋/件', shelf:'—', img:'digaowang.png', effect:'强力分解池底淤泥有机物、转化为藻类营养、稳定藻相；去除控制硫化氢氨氮亚硝酸盐甲烷、消除底臭；增强底质自净能力'},
+      {name:'强效底加氧', type:'活性载体氧、HTPS', tag:['增氧','解毒','除臭','分解','除粘'],
+       ingredient:'活性载体氧、HTPS、解毒因子等',
+       use:'每亩1米水深300克（每桶30亩）；底恶化时每桶15-20亩，缺氧严重酌情加量。',
+       note:'开封后尽快使用，以免失效。', spec:'10Kg/桶', shelf:'24个月', img:'qiangxiaodijiayang.png', effect:'雾状放氧、快速提升底部溶氧；解毒缓解氨氮亚硝酸盐硫化氢等中毒；分解底层有机废物、改善池底发黑发臭发热'},
+      {name:'氧霸', type:'过碳酸钠制剂', tag:['立体增氧','快速增氧','改良底质','缓解浮头'],
+       ingredient:'过碳酸钠、缓释助溶剂、增效剂',
+       use:'常规每桶用60-100亩·米水体，环境恶化酌情加量，全池抛洒。',
+       note:'常温可持续放氧8-10小时；开封后尽快使用。', spec:'10Kg/桶', shelf:'24个月', img:'yangba.png', effect:'直达底部、提高底层溶氧；常温持续放氧8-10小时；促进物质循环、解决水体分层'},
+      {name:'黑土精', type:'腐植酸钠片状', tag:['净化水质','抑制青苔','清除泥皮','降低氨氮'],
+       ingredient:'腐植酸钠片状、有益菌群、解毒免疫调节剂、矿物元素等',
+       use:'每亩1米水深使用350-500克，加适量池塘水稀释后全池均匀泼洒。',
+       note:'络合藻毒素、重金属离子，分解有机物，抑制青苔生长。', spec:'1000g/袋×20袋/件', shelf:'24个月', img:'heitujing.png', effect:'解毒除臭、净化水质、络合藻毒素重金属；强力改底、均衡藻相、抑制蓝藻鞭毛藻；提高肥效、培藻壮草；抑制青苔生长、分解泥皮'},
+      {name:'长效片片氧', type:'过碳酸钠制剂', tag:['直达底部增氧','持续放氧','缓解缺氧'],
+       ingredient:'过碳酸钠、缓释助溶剂、增效剂',
+       use:'直接向池塘均匀抛洒；雷雨前/闷热时每1米水深1亩200克；生物改良品使用前后每1米1亩100克。',
+       note:'常温持续放氧8-10小时；开封后尽快使用。', spec:'10Kg/桶', shelf:'24个月', img:'changxiaopianpianyang.png', effect:'直达底部、提高底层溶氧；常温持续放氧8-10小时；促进物质循环、解决水体分层'},
+      {name:'底净', type:'复合菌酶制剂', tag:['分解底改','抑制弧菌','增氧除臭','降解氨氮'],
+       ingredient:'枯草芽孢杆菌、地衣芽孢杆菌、凝结芽孢杆菌、蛋白酶、淀粉酶等，有效活菌30亿',
+       use:'全池均匀抛洒，投饵区、池塘死角、污染严重处重点使用，每桶30-50亩，恶化酌情加量。',
+       note:'3层滚粒技术，持续分解残饵、粪便、死苔死藻，改善池底环境。', spec:'1桶10公斤', shelf:'—', img:'dijing.png', effect:'改底除臭、分解底泥、降解氨氮；减少底部耗氧因子、增加溶氧；促进物质循环、解决水体分层'}
+    ]
+  },
+  s4: {
+    name:'其他系列', intro:'植物提取物、肥水培藻等多元绿色产品，覆盖养殖全过程。',
+    items:[
+      {name:'黄芪颗粒', type:'天然植物原料 黄芪粗提物', tag:['清热解毒','增强免疫','提高抵抗力'],
+       ingredient:'黄芪粗提物，黄芪多糖≥60%',
+       use:'本品每500g兑水2000斤，拌料1000斤。',
+       note:'提升免疫抗病毒、保肝护胰、强抗应激、修复肠道、促生长。', spec:'500g/袋×20袋/件', shelf:'两年', img:'huangqikeli.png', effect:'提升免疫力、抗病毒、诱导干扰素；保肝护胰、解毒、缓解肝损伤；强抗应激；修复肠道、增厚肠壁；促生长、提高苗期成活率'},
+      {name:'黄芪粉', type:'天然植物饲料原料 黄芪粗提物', tag:['清热解毒','增强抵抗','减少应激'],
+       ingredient:'黄芪',
+       use:'混饲：本品1000拌料1000-2000kg，连用5-7天；混饮：1000兑水2000-4000kg。',
+       note:'勿与其它氧化、消毒物质混合使用。', spec:'1kg/袋×25袋/桶 25kg/桶', shelf:'24个月', img:'huangqifen.png', effect:'清热解毒、增强抵抗、减少应激'},
+      {name:'板青颗粒', type:'天然植物原料 金银花粗提物', tag:['清瘟败毒','热病发斑','增强免疫','预防病毒'],
+       ingredient:'金银花粗提物',
+       use:'本品每500g兑水1000斤，拌料500斤。',
+       note:'清热解毒、消肿散结、强心利尿利胆、抗菌消炎、抗病毒、增强免疫力。', spec:'500g/袋', shelf:'两年', img:'banqingkeli.png', effect:'清热解毒、消肿散结、强心利尿利胆、抗菌消炎、抗病毒、增强免疫力'},
+      {name:'甘草颗粒 呼畅', type:'天然植物饲料原料 甘草粗提物', tag:['祛痰止咳','清热解毒','肺炎咳嗽','咳嗽气喘'],
+       ingredient:'甘草粗提物，甘草酸≥0.1%',
+       use:'本品每500g兑水1000斤，拌料500斤。',
+       note:'清热解毒、祛痰止咳、通利咽喉。', spec:'500g/袋×20袋/件', shelf:'两年', img:'gancao.png', effect:'清热解毒、祛痰止咳、通利咽喉'},
+      {name:'蓝精灵1号', type:'植物乳杆菌、紫外吸收剂', tag:['降低透明度','遮光','降低PH值','防止藻类过繁'],
+       ingredient:'植物乳杆菌、紫外吸收剂、纤维素酶等',
+       use:'兑水后全池均匀泼洒，或挂网袋拖拽、置进水口自溶，60-100克/亩，每两周一次。',
+       note:'通过紫外吸收剂防止光线直射池底，抑制青苔、杂草繁殖。', spec:'300g/袋（100g×3袋）×30袋/箱', shelf:'24个月', img:'lanjingling1.png', effect:'控制水体透明度、抑制青苔杂草繁殖；防止青苔缠绕附着；加快物质循环、稳定水色水质；防止水温过高、减少应激'},
+      {name:'多肽肥水宝', type:'枯草芽孢杆菌制剂', tag:['肥水培藻','稳定水体','幼苗促肥','净水肥水'],
+       ingredient:'枯草芽孢杆菌、复合氨基酸、多种微量元素、单细胞活力素等',
+       use:'溶水后全池均匀泼洒，每亩1米300-500克（一袋10-15亩），水质清瘦可加量。',
+       note:'快速激活有益单细胞藻类，提高抗病能力和抗应激能力。', spec:'10kg/袋 25kg/袋', shelf:'12个月', img:'duotai.png', effect:'快速激活有益单细胞藻类；分解残饵粪便转化为浮游生物营养源；形成菌藻平衡、提供天然饵料；提高抗病抗应激、降低发病率'},
+      {name:'硅藻3合一', type:'硅藻+肽肥+菌', tag:['肥水培藻','提供饵料','改善水质'],
+       ingredient:'硅藻休眠孢子、硅藻定向肥、低温芽孢、单细胞植物细胞分裂素、复合氨基酸等',
+       use:'3种产品混合加20倍水发酵2-3小时后全池泼洒，本品每公斤用2-3亩1米水深。',
+       note:'本品为益生微生物菌藻产品，使用前后3天请勿消毒。', spec:'10kg/件 20Kg/件', shelf:'24个月', img:'guizaosanheyi.png', effect:'补充硅藻藻种；补充低温型芽孢菌、分解残饵粪便；强化硅藻营养、促进繁殖；改善水色、达到肥活嫩爽'},
+      {name:'浊水净', type:'硫酸钠复合物', tag:['改善混浊水','帮助肥水','降低氨氮亚硝酸盐'],
+       ingredient:'硫酸钠复合物5%、聚合氯化铝、表面活性剂等',
+       use:'平时每袋可用1米水深池塘6-8亩；有情况时3-4亩，水清时减量，可隔天再用。',
+       note:'水体缺氧时禁用；吸潮结块不影响产品质量。', spec:'1kg/袋', shelf:'24个月', img:'zhuoshuijing.png', effect:'改善混浊水、黄混水等不良水色；帮助肥水、利于藻类稳定；降低部分氨氮和亚硝酸盐'}
+    ]
+  },
+  s5: {
+    name:'牛羊系列', intro:'反刍动物营养保健与饲料添加剂系列产品，助力牛羊健康养殖。',
+    items:[
+      {name:'黄芪多糖颗粒', type:'天然植物饲料原料 黄芪粗提物', tag:['益气固本','增强机体抵抗力','诱导产生干扰素','调节机体免疫'],
+       ingredient:'黄芪',
+       use:'本品每500g兑水2000斤，拌料1000斤。',
+       note:'补气固表、托毒生肌、利尿消肿、提高免疫力、抗菌抗病毒、促进生长。', spec:'500g/袋', shelf:'两年', img:'huangqiduotang.png', effect:'补气固表、托毒生肌、利尿消肿；提高免疫力、抗菌抗病毒、促进生长'},
+      {name:'肠优宝', type:'混合型饲料添加剂 液态丁酸梭菌', tag:['白便拖便','修复肠黏膜','空肠空胃','抑制有害菌','促消化吸收'],
+       ingredient:'丁酸梭菌及其代谢产物、营养剂',
+       use:'家禽1000ml拌料2000斤、饮水4000斤，连用3-5天；反刍动物灌服牛马1ml/kg、羊0.3-0.5ml/kg，每日1-2次，连用3天。',
+       note:'不可与抗生素、消毒剂同用（间隔≥3天）；开封尽快用完。', spec:'1000ml/瓶×12瓶/箱', shelf:'24个月', img:'changyoubao_ny.png', effect:'消除高蛋白饲料带来的肝胆负担；调节肠道微生态平衡、增进食欲；调节菌藻平衡、分解有机物'},
+      {name:'冰爽一夏', type:'混合型饲料添加剂 L-抗坏血酸（维生素C）', tag:['清凉解暑','减少应激','增强体质','补维生素'],
+       ingredient:'维生素C、牛磺酸、薄荷',
+       use:'本品500g拌料1000斤，兑水2000斤。',
+       note:'注意存放时防止受潮；包装打开后尽快用完，未用完需重新密封。', spec:'500g/袋×20袋/箱', shelf:'24个月', img:'bingshuangyixia.png', effect:'防暑降温、凉血健体；补充营养、调节电解质平衡；清凉解暑、减少应激、增强体质'},
+      {name:'速肥（反刍专用）', type:'混合型饲料添加剂 酿酒酵母', tag:['催肥增重','去油猛长','拉大骨架','皮毛光亮','提前出栏'],
+       ingredient:'酿酒酵母、枯草芽孢杆菌、糖化酶、淀粉酶',
+       use:'本品500克拌料1000公斤，酌情加量。',
+       note:'复合益生菌调节肠道菌群平衡，促进有益菌增殖，降低有害菌占比。', spec:'500g/袋×20袋/件', shelf:'24个月', img:'sufei.png', effect:'复合益生菌调节肠道菌群平衡、降低有害菌占比；改善饲料口感、增进食欲、提高采食量；促进消化吸收、提高瘦肉率、拉大骨架'},
+      {name:'藿香粗提液', type:'天然植物饲料原料 藿香粗提液', tag:['降温防暑','增食开胃','抗热应激'],
+       ingredient:'藿香',
+       use:'饮水：每瓶500ml兑水1000kg，自由饮服连用2-3天。',
+       note:'按规定计量使用，暂未见不良反应；开瓶后尽快用完。', spec:'500ml/瓶×20瓶/箱', shelf:'24个月', img:'huoxiangye.png', effect:'解表祛暑、化湿和中、解暑降温；降温防暑、增食开胃、抗热应激'},
+      {name:'猛吃猛长', type:'混合型饲料添加剂 枯草芽孢杆菌', tag:['开胃促食','催肥增重','拉大骨架','提前出栏'],
+       ingredient:'枯草芽孢杆菌、酿酒酵母、滑石粉（稀释剂）',
+       use:'本品每袋1000克拌料2000斤。',
+       note:'改善饲料口感、增进食欲、提高采食量、减少过料、多吃快长、提早出栏。', spec:'1000g/袋×10袋/件', shelf:'24个月', img:'mengchang.png', effect:'改善饲料口感、增进食欲、提高采食量；重塑肠道微生态、焕活胃肠机能；多吃快长、提早出栏'},
+      {name:'精方—牛羊瘤胃宝', type:'混合型饲料添加剂 盐酸硫胺（维生素B₁）', tag:['催肥增重','调节肠胃','皮毛光亮','提前出栏'],
+       ingredient:'盐酸硫胺、枯草芽孢杆菌、复合酶',
+       use:'1000克拌料1000公斤，每天一次集中饲喂，可长期使用。',
+       note:'健胃消食、促生长。', spec:'1000g/袋×10袋/件', shelf:'24个月', img:'liuweibao.png', effect:'健胃消食、促生长；催肥增重、调节肠胃、皮毛光亮、提前出栏'},
+      {name:'呼畅（甘草颗粒）', type:'天然植物饲料原料 甘草粗提物', tag:['祛痰止咳','清热解毒','肺炎咳嗽','咳嗽气喘'],
+       ingredient:'甘草粗提物',
+       use:'本品每500g兑水1000斤，拌料500斤。',
+       note:'清热解毒、祛痰止咳、通利咽喉。', spec:'500g/袋×20袋/件', shelf:'两年', img:'huchang.png', effect:'清热解毒、祛痰止咳、通利咽喉'},
+      {name:'板青颗粒型', type:'天然植物饲料原料 金银花粗提物', tag:['预防流感','清热解毒','咳嗽气喘','增强免疫'],
+       ingredient:'金银花等',
+       use:'本品每500g兑水1000斤，拌料500斤。',
+       note:'清热解毒、凉血；主治风热感冒、咽喉肿痛、热病发斑等温热性疾病。', spec:'500g/袋×20袋/件', shelf:'两年', img:'banqing_ny.png', effect:'清热解毒、凉血；主治风热感冒、咽喉肿痛、热病发斑等温热性疾病'}
+    ]
+  }
+};
+
+/* ============ 渲染逻辑 ============ */
+(function(){
+  var KEYS = ['s1','s2','s3','s4','s5'];
+  var gridEl = document.getElementById('pgrid');
+
+  function renderCard(it){
+    var d = document.createElement('div');
+    d.className = 'p-card';
+    var tags = it.tag.map(function(t){return '<span>'+t+'</span>';}).join('');
+    d.innerHTML =
+      '<div class="thumb"><img src="assets/'+it.img+'" alt="'+it.name+'"></div>'+
+      '<div class="body">'+
+        '<div class="name">'+it.name+'</div>'+
+        '<div class="type">'+it.type+'</div>'+
+        '<div class="tags">'+tags+'</div>'+
+        '<div class="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>点击查看详情</div>'+
+      '</div>';
+    d.addEventListener('click', function(){ openModal(it); });
+    return d;
+  }
+
+  /* ---------- 弹窗控制 ---------- */
+  var modal = document.getElementById('modal');
+  var mImg = document.getElementById('mImg');
+  var mName = document.getElementById('mName');
+  var mType = document.getElementById('mType');
+  var mTags = document.getElementById('mTags');
+  var mDetail = document.getElementById('mDetail');
+
+  function openModal(it){
+    mImg.src = 'assets/'+it.img;
+    mImg.alt = it.name;
+    mName.textContent = it.name;
+    mType.textContent = it.type;
+    mTags.innerHTML = it.tag.map(function(t){return '<span>'+t+'</span>';}).join('');
+    mDetail.innerHTML =
+      '<div class="row"><b>主要作用：</b>'+(it.effect||it.tag.join('、'))+'</div>'+
+      '<div class="row"><b>原料组成：</b>'+it.ingredient+'</div>'+
+      '<div class="row"><b>用法用量：</b>'+it.use+'</div>'+
+      '<div class="row"><b>注意事项：</b>'+it.note+'</div>'+
+      '<div class="row"><b>包装规格：</b>'+it.spec+'</div>'+
+      '<div class="row"><b>保质期：</b>'+it.shelf+'</div>';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('modalMask').addEventListener('click', closeModal);
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+
+  function renderAll(){
+    KEYS.forEach(function(k){
+      var s = window.PRODUCTS[k];
+      var block = document.createElement('div');
+      block.className = 'series-block';
+      block.id = 'series-' + k;
+      block.innerHTML = '<div class="series-title">'+s.name+'</div><div class="series-intro">'+s.intro+'</div>';
+      var grid = document.createElement('div');
+      grid.className = 'p-grid';
+      if(s.items && s.items.length){
+        s.items.forEach(function(it){ grid.appendChild(renderCard(it)); });
+      }else{
+        var ph = document.createElement('div');
+        ph.className = 'series-empty';
+        ph.textContent = '本系列产品整理中，敬请期待';
+        grid.appendChild(ph);
+      }
+      block.appendChild(grid);
+      gridEl.appendChild(block);
+    });
+  }
+
+  renderAll();
+
+  /* ---------- Floating quick nav ---------- */
+  var fab = document.getElementById('fab');
+  document.getElementById('fabBtn').addEventListener('click', function(e){
+    e.stopPropagation();
+    fab.classList.toggle('open');
+  });
+  fab.querySelectorAll('.fab-item').forEach(function(b){
+    b.addEventListener('click', function(){
+      var el = document.getElementById(b.getAttribute('data-target'));
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      fab.classList.remove('open');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(!fab.contains(e.target)) fab.classList.remove('open');
+  });
+})();
+</script>
+</body>
+</html>
